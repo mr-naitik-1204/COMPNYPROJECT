@@ -2,21 +2,21 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 
-function Sec3() {
+function Sec8() {
     const items = [
         {
-            imgSrc: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-img-1.jpg",
-            title: "01 BEAUTIFUL PLACE",
+            imgSrc: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/02/home-1-blog-f-img-1.jpg",
+            title: " MAKE IT SIMPLE",
             description: "Alienum phaedrum to rquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est.",
         },
         {
-            imgSrc: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-img-2.jpg",
-            title: "02 FEEL THE COFFEE",
+            imgSrc: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-1-blog-f-img-2.jpg",
+            title: " COFFEE SHOP",
             description: "Alienum phaedrum to rquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est.",
         },
         {
-            imgSrc: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-img-3.jpg",
-            title: "03 FULL TASTE",
+            imgSrc: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-1-blog-f-img-3.jpg",
+            title: " COFFEE BAR",
             description: "Alienum phaedrum to rquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est.",
         },
     ];
@@ -70,4 +70,5 @@ function Sec3() {
     );
 }
 
-export default Sec3;
+export default Sec8;
+

@@ -39,10 +39,10 @@ function Nav() {
         <AppBar sx={{
             width: "100%",
             position: "sticky",
-            top: "10px",
+            top: "0px",
             zIndex:"999",
-            backgroundColor: "transparent",
-            backdropFilter: " blur( 20px )",
+            backgroundColor: "black",
+             backdropFilter: " blur( 20px )",
             // background: "rgba( 255, 255, 255, 0.25 )",
             // margin: "30px auto 0px auto",
             // // boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
