@@ -13,7 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 
-const pages = ['HOME', 'MENU', 'BLOG', 'GALLERY', 'CONTACT'];
+const pages = ['HOME', 'MENU', 'BLOG', 'ABOUT ME', 'CONTACT'];
 
 function Nav() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);

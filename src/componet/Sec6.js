@@ -21,6 +21,7 @@ function Sec6() {
                             backgroundColor: 'rgba(0, 0, 0, 0.5)', // Black overlay
                             opacity: 0,
                             transition: 'opacity 0.3s',
+                            cursor:"pointer",
                             '&:hover': {
                                 opacity: 1,
                             },
@@ -43,6 +44,7 @@ function Sec6() {
                             backgroundColor: 'rgba(0, 0, 0, 0.5)', 
                             opacity: 0,
                             transition: 'opacity 0.3s',
+                            cursor:"pointer",
                             '&:hover': {
                                 opacity: 1,
                             },
@@ -65,6 +67,7 @@ function Sec6() {
                             backgroundColor: 'rgba(0, 0, 0, 0.5)', 
                             opacity: 0,
                             transition: 'opacity 0.3s',
+                            cursor:"pointer",
                             '&:hover': {
                                 opacity: 1,
                             },
@@ -87,6 +90,7 @@ function Sec6() {
                             backgroundColor: 'rgba(0, 0, 0, 0.5)', 
                             opacity: 0,
                             transition: 'opacity 0.3s',
+                            cursor:"pointer",
                             '&:hover': {
                                 opacity: 1,
                             },
@@ -109,6 +113,7 @@ function Sec6() {
                             backgroundColor: 'rgba(0, 0, 0, 0.5)', 
                             opacity: 0,
                             transition: 'opacity 0.3s',
+                            cursor:"pointer",
                             '&:hover': {
                                 opacity: 1,
                             },
@@ -122,6 +127,7 @@ function Sec6() {
                         alignItems: "center",
                         fontSize: "27px",
                         fontWeight: "800",
+                        fontFamily:"Lobster, sans-serif"
                     }}>
                         T <br /> E <br /> A 
                     </Typography>
@@ -163,6 +169,7 @@ function Sec6() {
                             backgroundColor: 'rgba(0, 0, 0, 0.5)', 
                             opacity: 0,
                             transition: 'opacity 0.3s',
+                            cursor:"pointer",
                             '&:hover': {
                                 opacity: 1,
                             },
