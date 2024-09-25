@@ -16,7 +16,7 @@ function Contect() {
   const handleChange2 = (event) => {
     setType(event.target.value);
   };
-  
+  window.scrollTo({ top: 0, behavior: "instant" })
   return (
     <>
       <Nav />

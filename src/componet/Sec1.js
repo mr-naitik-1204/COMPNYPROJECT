@@ -1,6 +1,7 @@
 import React from 'react';
 import "./styles.css";
 import { Box, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Sec1() {
 
@@ -39,6 +40,8 @@ function Sec1() {
                     <Typography variant='h6' sx={{ color: "white", fontSize: { xs: '1rem', md: '1.25rem', fontFamily: "Sofadi One, system-ui" } }}>
                         Coffee that fuels your dreams. Life is short, stay awake for it. Coffee, Art, and Vintage. Fuel for your creativity.
                     </Typography>
+                    <Link to={'/CONTACT'}>
+                   
                     <Button
                         sx={{
                             marginBottom: "100px",
@@ -58,7 +61,7 @@ function Sec1() {
                     >
                         READ MORE
                     </Button>
-
+                    </Link>
                 </Box>
             </Box>
             <Box sx={{ width: "100%", marginBottom: "-3px", position: "absolute", bottom: "0", backgroundColor: "transparent", zIndex: "99" }}>

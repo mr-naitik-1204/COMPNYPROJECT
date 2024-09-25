@@ -1,5 +1,6 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 function Sec7() {
@@ -136,92 +137,94 @@ function Sec7() {
         C1915.898,10.076,1910.912,9.958,1906.688,12.029z"></path></svg>
                 </Box>
                 <Box sx={{ width: "90%", mx: "auto", mb: "50px" }}>
-    <Box
-        sx={{
-            mt: { xs: "30px", md: "60px" },
-            p: { xs: '20px', md: '0' },
-            flexDirection: 'column',
-        }}
-    >
-        <Box sx={{ textAlign: "center" }}>
-            <Typography
-                variant='h5'
-                sx={{
-                    fontFamily: "Fascinate Inline",
-                    color: "#BA926C",
-                    pt: { xs: "30px", md: "50px" },
-                    mb: "20px",
-                    fontSize: { xs: '0.8rem', md: '1.5rem' }
-                }}
-            >
-                What Happens Here
-            </Typography>
-            <Typography
-                variant='h4'
-                sx={{
-                    color: "white",
-                    fontWeight: "800",
-                    mb: "20px",
-                    fontSize: { xs: '1.5rem', md: '2rem' }
-                }}
-            >
-                COFFEE BUILDS YOUR BASE.
-            </Typography>
-            <Box width={"100%"} sx={{ maxWidth: "200px", mx: "auto" }}>
-                <hr style={{ backgroundColor: "#CA8E46", height: "2px", border: "0" }} />
-            </Box>
-        </Box>
-    </Box>
-    <Box sx={{ mt: { xs: "30px", md: "50px" } }}>
-        <Container>
-            <Grid container spacing={4} sx={{ color: "white" }}>
-                {[ 
-                    { title: "Caffe Latte", price: "$5.45", description: "Fresh brewed coffee and steamed milk", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-150x150.jpg" },
-                    { title: "Caffe Mocha", price: "$3.67", description: "Espresso With Milk, and Whipped Cream", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-2-150x150.jpg" },
-                    { title: "Cappuccino", price: "$3.06", description: "Espresso Shots and Light Layer of Crema", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-6-150x150.jpg" },
-                    { title: "Caffe tea Lat", price: "$6.45", description: "Fresh brewed coffee and steamed milk", img: "https://avatars.mds.yandex.net/i?id=9956cac76a526a6d3cb7524abc9ded43131b283a-10574297-images-thumbs&n=13" },
-                    { title: "tea fresh", price: "$3.45", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=15bedbbbc402c6e79e140f42f8bdbb3ce5a107f4-8498042-images-thumbs&n=13" },
-                    { title: "tea caffe", price: "$2.45", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=47bb492687fbbec0ca569facb31e93afabd6768c-10350639-images-thumbs&n=13" }
-                ].map((item, index) => (
-                    <Grid item xs={12} sm={6} lg={6} key={index}>
-                        <Box sx={{ display: "flex", alignItems: "center" }}>
-                            <Box component={"img"} src={item.img} sx={{ width: "80px" }} />
-                            <Box sx={{ width: "90%", pl: "20px" }}>
-                                <Box sx={{ display: "flex", justifyContent: "space-between", fontSize: "25px", alignItems: "end" }}>
-                                    <Box>{item.title}</Box>
-                                    <Box sx={{ width: "50%", backgroundColor: "white", height: "2px" }} />
-                                    <Box>{item.price}</Box>
-                                </Box>
-                                <Box sx={{ color: "#C7A17A", mt: "7px" }}>{item.description}</Box>
+                    <Box
+                        sx={{
+                            mt: { xs: "30px", md: "60px" },
+                            p: { xs: '20px', md: '0' },
+                            flexDirection: 'column',
+                        }}
+                    >
+                        <Box sx={{ textAlign: "center" }}>
+                            <Typography
+                                variant='h5'
+                                sx={{
+                                    fontFamily: "Fascinate Inline",
+                                    color: "#BA926C",
+                                    pt: { xs: "30px", md: "50px" },
+                                    mb: "20px",
+                                    fontSize: { xs: '0.8rem', md: '1.5rem' }
+                                }}
+                            >
+                                What Happens Here
+                            </Typography>
+                            <Typography
+                                variant='h4'
+                                sx={{
+                                    color: "white",
+                                    fontWeight: "800",
+                                    mb: "20px",
+                                    fontSize: { xs: '1.5rem', md: '2rem' }
+                                }}
+                            >
+                                COFFEE BUILDS YOUR BASE.
+                            </Typography>
+                            <Box width={"100%"} sx={{ maxWidth: "200px", mx: "auto" }}>
+                                <hr style={{ backgroundColor: "#CA8E46", height: "2px", border: "0" }} />
                             </Box>
                         </Box>
-                    </Grid>
-                ))}
-            </Grid>
-            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", mt: "50px" }}>
-                <Button
-                    sx={{
-                        mb: "100px",
-                        height: "50px",
-                        width: "160px",
-                        backgroundColor: "#C7A17A",
-                        mt: "20px",
-                        color: "black",
-                        fontWeight: "800",
-                        border: "2px solid transparent",
-                        '&:hover': {
-                            backgroundColor: "transparent",
-                            border: "2px solid white",
-                            color: "white"
-                        },
-                    }}
-                >
-                    READ MORE
-                </Button>
-            </Box>
-        </Container>
-    </Box>
-</Box>
+                    </Box>
+                    <Box sx={{ mt: { xs: "30px", md: "50px" } }}>
+                        <Container>
+                            <Grid container spacing={4} sx={{ color: "white" }}>
+                                {[
+                                    { title: "Caffe Latte", price: "$5.45", description: "Fresh brewed coffee and steamed milk", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-150x150.jpg" },
+                                    { title: "Caffe Mocha", price: "$3.67", description: "Espresso With Milk, and Whipped Cream", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-2-150x150.jpg" },
+                                    { title: "Cappuccino", price: "$3.06", description: "Espresso Shots and Light Layer of Crema", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-6-150x150.jpg" },
+                                    { title: "Caffe tea Lat", price: "$6.45", description: "Fresh brewed coffee and steamed milk", img: "https://avatars.mds.yandex.net/i?id=9956cac76a526a6d3cb7524abc9ded43131b283a-10574297-images-thumbs&n=13" },
+                                    { title: "tea fresh", price: "$3.45", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=15bedbbbc402c6e79e140f42f8bdbb3ce5a107f4-8498042-images-thumbs&n=13" },
+                                    { title: "tea caffe", price: "$2.45", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=47bb492687fbbec0ca569facb31e93afabd6768c-10350639-images-thumbs&n=13" }
+                                ].map((item, index) => (
+                                    <Grid item xs={12} sm={6} lg={6} key={index}>
+                                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                                            <Box component={"img"} src={item.img} sx={{ width: "80px" }} />
+                                            <Box sx={{ width: "90%", pl: "20px" }}>
+                                                <Box sx={{ display: "flex", justifyContent: "space-between", fontSize: "25px", alignItems: "end" }}>
+                                                    <Box>{item.title}</Box>
+                                                    <Box sx={{ width: "50%", backgroundColor: "white", height: "2px" }} />
+                                                    <Box>{item.price}</Box>
+                                                </Box>
+                                                <Box sx={{ color: "#C7A17A", mt: "7px" }}>{item.description}</Box>
+                                            </Box>
+                                        </Box>
+                                    </Grid>
+                                ))}
+                            </Grid>
+                            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", mt: "50px" }}>
+                                <Link to={'/MENU'}>
+                                    <Button
+                                        sx={{
+                                            mb: "100px",
+                                            height: "50px",
+                                            width: "160px",
+                                            backgroundColor: "#C7A17A",
+                                            mt: "20px",
+                                            color: "black",
+                                            fontWeight: "800",
+                                            border: "2px solid transparent",
+                                            '&:hover': {
+                                                backgroundColor: "transparent",
+                                                border: "2px solid white",
+                                                color: "white"
+                                            },
+                                        }}
+                                    >
+                                        READ MORE
+                                    </Button>
+                                </Link>
+                            </Box>
+                        </Container>
+                    </Box>
+                </Box>
 
                 <Box sx={{ width: "100%", marginBottom: "-3px", position: "absolute", bottom: "0", backgroundColor: "transparent", zIndex: "99" }}>
                     <svg fill='#EEEEEE' class="edgtf-lighter-effect edgtf-lighter-effect-top" preserveAspectRatio="none" width="100%" height="70px" viewBox="0 0 1920 27" enable-background="new 0 0 1920 27"><path d="M1906.688,12.029c-1.653-1.78-3.943-0.347-5.823-0.883c-0.623,0.442-0.879,1.208-1.873,1.044

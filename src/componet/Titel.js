@@ -15,12 +15,36 @@ function Titel(props) {
                 backgroundPositionY: "50%",
             }}>
             
-                <Container maxWidth="lg" sx={{ width:"auto", position: "absolute", top: "150px", left: {xs:"20px",sm:"100px"}, zIndex: "99", display: "flex" }} >
-                    <Box sx={{ width: "5px", backgroundColor: "#B77A3E" }}></Box>
-                    <Box sx={{ marginLeft: "30px", fontSize: "50px", fontWeight: "700", color: "white",lineHeight:"0.9" }}>
-                    {props.Name}
-                    </Box>
-                </Container>
+            <Container
+    maxWidth="lg"
+    sx={{
+        width: "auto",
+        position: "absolute",
+        top: "150px",
+        left: { xs: "20px", sm: "100px" },
+        zIndex: "99",
+        display: "flex",
+    }}
+>
+    <Box sx={{ width: "5px", backgroundColor: "#B77A3E" }}></Box>
+    <Box
+        sx={{
+            marginLeft: "30px",
+            fontSize: {
+                xs: "24px",  
+                sm: "30px",  
+                md: "40px",  
+                lg: "50px",  
+            },
+            fontWeight: "700",
+            color: "white",
+            lineHeight: "0.9",
+        }}
+    >
+        {props.Name}
+    </Box>
+</Container>
+
                 <Box sx={{ width: "100%", marginBottom: "-3px", position: "absolute", bottom: "0", backgroundColor: "transparent", zIndex: "99" }}>
                 <svg fill='#EEEEEE' class="edgtf-lighter-effect edgtf-lighter-effect-top" preserveAspectRatio="none" width="100%" height="80px" viewBox="0 0 1920 27" enable-background="new 0 0 1920 27"><path d="M1906.688,12.029c-1.653-1.78-3.943-0.347-5.823-0.883c-0.623,0.442-0.879,1.208-1.873,1.044
         c-1.992-1.974-5.01-1.6-7.448-2.713c-0.417,0.074-0.441,0.997-1.238,0.33c-0.103-0.113-0.323-0.356-1.033-1.142

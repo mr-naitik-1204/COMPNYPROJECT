@@ -10,6 +10,7 @@ import Sec7 from './Sec7';
 import Sec8 from './Sec8';
 import Footer from './Footer';
 function Lending() {
+    window.scrollTo({ top: 0, behavior: "instant" })
     return (
         <>
             <Nav />

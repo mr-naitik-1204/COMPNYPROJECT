@@ -1,5 +1,6 @@
 import { Box, Button, Container, Grid, Grid2, Typography } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Sec4() {
     return (
@@ -155,6 +156,7 @@ function Sec4() {
                                 <Typography variant='h6' sx={{ marginTop: "15px", fontSize: { xs: '0.9rem', md: '1rem' } }}>
                                     Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas.
                                 </Typography>
+                                <Link to={'/CONTACT'}>
                                 <Button
                                     sx={{
                                         height: "50px",
@@ -173,6 +175,7 @@ function Sec4() {
                                 >
                                     READ MORE
                                 </Button>
+                                </Link>
                             </Box>
                         </Grid>
                     </Grid>

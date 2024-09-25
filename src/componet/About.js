@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Count from './Count';
 
 function About() {
+    window.scrollTo({ top: 0, behavior: "instant" })
     return (
         <>
             <Nav />

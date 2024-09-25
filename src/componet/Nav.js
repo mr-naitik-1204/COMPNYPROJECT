@@ -11,9 +11,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
 
-const pages = ['HOME', 'MENU', 'BLOG', 'ABOUT ME', 'CONTACT'];
+const pages = ['HOME', 'MENU', 'BLOG', 'ABOUT', 'CONTACT'];
 
 function Nav() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -40,9 +41,9 @@ function Nav() {
             width: "100%",
             position: "sticky",
             top: "0px",
-            zIndex:"999",
+            zIndex: "999",
             backgroundColor: "black",
-             backdropFilter: " blur( 20px )",
+            backdropFilter: " blur( 20px )",
             // background: "rgba( 255, 255, 255, 0.25 )",
             // margin: "30px auto 0px auto",
             // // boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
@@ -52,9 +53,13 @@ function Nav() {
         }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
+                   
                     <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1 }}>
+                    <Link to={'/'}>
                         <img src="./image/logon.png" alt="Logo" width="150px" />
+                        </Link>
                     </Box>
+                    
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -90,7 +95,7 @@ function Nav() {
                                         '&:hover': {
                                             backgroundColor: "rgba(255, 255, 255, 0.1)", // Add hover effect
                                         }
-                                        
+
                                     }}
                                 >
                                     <Typography sx={{ textAlign: 'center', backgroundColor: "transparent" }}>
@@ -103,34 +108,38 @@ function Nav() {
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "space-evenly", padding: "0px" }}>
                         {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', fontWeight: "800", display: 'block' }}
-                            >
-                                {page}
-                            </Button>
+                            <Link to={page == "HOME" ? "/" : `/${page}`} style={{ textDecoration: "none" }}>
+                                <Button
+                                    key={page}
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ my: 2, color: 'white', fontWeight: "800", display: 'block' }}
+                                >
+                                    {page}
+                                </Button>
+                            </Link>
                         ))}
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title=" RESERVATION">
-                            <Button
-                                onClick={handleOpenUserMenu}
-                                sx={{
-                                    color: "white",
-                                    height: { lg: "40px", sm: "30px", xs: "20px" },
-                                    width: { lg: "140px", sm: "120px", xs: "100px" },
-                                    fontSize: { sm: "15px", xs: "10px" },
-                                    backgroundColor: "#CA8E46",
-                                    '&:hover': {
-                                        backgroundColor: "#B77A3E"
-                                    },
-                                    fontWeight:"700"
-                                }}
-                            >
-                                RESERVATION
-                            </Button>
+                            <Link to={'/RESERVATION'}>
+                                <Button
+                                    onClick={handleOpenUserMenu}
+                                    sx={{
+                                        color: "white",
+                                        height: { lg: "40px", sm: "30px", xs: "20px" },
+                                        width: { lg: "140px", sm: "120px", xs: "100px" },
+                                        fontSize: { sm: "15px", xs: "10px" },
+                                        backgroundColor: "#CA8E46",
+                                        '&:hover': {
+                                            backgroundColor: "#B77A3E"
+                                        },
+                                        fontWeight: "700"
+                                    }}
+                                >
+                                    RESERVATION
+                                </Button>
+                            </Link>
                         </Tooltip>
                     </Box>
                 </Toolbar>
