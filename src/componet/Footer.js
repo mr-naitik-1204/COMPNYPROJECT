@@ -5,7 +5,7 @@ import { TiSocialTumbler } from "react-icons/ti";
 
 function Footer() {
     return (
-        <Box sx={{ marginTop: "50px", backgroundImage: "url(https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/02/footer-img.jpg)", padding: "40px 0" }}>
+        <Box sx={{ marginTop: "50px", backgroundImage: "url(https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/02/footer-img.jpg)", paddingTop: "40px",backgroundRepeat:"no-repeat",backgroundSize:"cover" }}>
             <Container sx={{ color: "white", textTransform: "uppercase", fontWeight: "600", fontSize: { xs: "20px", sm: "23px" }, margin: "auto" }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={3}>
@@ -59,7 +59,7 @@ function Footer() {
                 </Grid>
             </Container>
             <Box sx={{ width: "100%", height: "100px", backgroundColor: "black", marginTop: "50px", color: "white", fontSize: "20px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <Box width={"400px"} sx={{ display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
+                <Box width={"400px"} sx={{ display: "flex", justifyContent: "space-evenly", alignItems: "center"}}>
                     <FaInstagram cursor={"pointer"} />
                     <FaFacebookF cursor={"pointer"} />
                     <FaTwitter cursor={"pointer"} />

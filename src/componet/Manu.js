@@ -89,7 +89,7 @@ function Manu() {
                         ].map((item, index) => (
                             <Grid item xs={12} sm={6} lg={6} key={index}>
                                 <Box sx={{ display: "flex", alignItems: "center" }}>
-                                    <Box component={"img"} src={item.img} sx={{ width: "80px" }} border={"2px solid black"} />
+                                    <Box component={"img"} src={item.img} sx={{ width: "80px",borderRadius:"50px" }} border={"2px solid black" } />
                                     <Box sx={{ width: "90%", pl: "20px" }}>
                                         <Box sx={{ display: "flex", justifyContent: "space-between", fontSize: "25px", alignItems: "end" }}>
                                             <Box>{item.title}</Box>

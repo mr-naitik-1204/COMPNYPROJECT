@@ -62,7 +62,7 @@ function Reservation() {
                     <Grid container spacing={2} sx={{ marginTop: "20px" }}>
                         <Grid item xs={12} sm={3}>
                             <FormControl sx={{ m: 1, minWidth: 120, width: '100%' }}>
-                                <InputLabel id="age-select-label">Age</InputLabel>
+                                <InputLabel id="age-select-label">parsan</InputLabel>
                                 <Select
                                     labelId="age-select-label"
                                     id="age-select"
@@ -70,7 +70,7 @@ function Reservation() {
                                     onClose={handleAgeClose}
                                     onOpen={handleAgeOpen}
                                     value={age}
-                                    label="Age"
+                                    label="parsan"
                                     onChange={handleAgeChange}
                                     MenuProps={{
                                         PaperProps: {
