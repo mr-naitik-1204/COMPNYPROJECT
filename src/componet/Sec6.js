@@ -6,7 +6,8 @@ function Sec6() {
         <Container sx={{ marginTop: "50px" }}>
             <Grid container spacing={2}>
                 <Grid item xs={6} sm={4} lg={3}>
-                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}>
+                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}  data-aos="fade-up"
+                            data-aos-delay="200">
                         <img 
                             style={{ width: "100%", height: "auto", transition: '0.3s' }} 
                             src="https://avatars.mds.yandex.net/i?id=c4427e819288ba83defa25a7faedd4f0b1a2a703-2856463-images-thumbs&n=13" 
@@ -29,7 +30,8 @@ function Sec6() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} sm={4} lg={3}>
-                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}>
+                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}  data-aos="fade-up"
+                            data-aos-delay="300">
                         <img 
                             style={{ width: "100%", height: "auto", transition: '0.3s' }} 
                             src="https://avatars.mds.yandex.net/i?id=f3d6d09aadfa4bb067e1e8d718644bd94551b5ed-4011139-images-thumbs&n=13" 
@@ -52,7 +54,8 @@ function Sec6() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} sm={4} lg={3}>
-                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}>
+                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}  data-aos="fade-up"
+                            data-aos-delay="400">
                         <img 
                             style={{ width: "100%", height: "auto", transition: '0.3s' }} 
                             src="https://avatars.mds.yandex.net/i?id=a9b795b5b393a385c14f91fff884e5b18160f8d1-7545599-images-thumbs&n=13" 
@@ -75,7 +78,8 @@ function Sec6() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} sm={4} lg={3}>
-                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}>
+                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}  data-aos="fade-up"
+                            data-aos-delay="500">
                         <img 
                             style={{ width: "100%", height: "auto", transition: '0.3s' }} 
                             src="https://avatars.mds.yandex.net/i?id=85a4881aaa6ffb4351f73988f121137a-5167369-images-thumbs&n=13" 
@@ -98,8 +102,9 @@ function Sec6() {
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={6} lg={5}>
-                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}>
-                        <img 
+                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}  data-aos="fade-up"
+                            data-aos-delay="600">
+                        <img  
                             style={{ width: "100%", height: "auto", transition: '0.3s' }} 
                             src="https://zzmusic.net/collection_images/960/0.jpg" 
                             alt="" 
@@ -120,7 +125,8 @@ function Sec6() {
                         }} />
                     </Box>
                 </Grid>
-                <Grid item xs={12} sm={4} lg={2}> 
+                <Grid item xs={12} sm={4} lg={2}  data-aos="fade-up"
+                            data-aos-delay="700">  
                     <Typography sx={{
                         display: "flex",
                         justifyContent: "center",
@@ -154,7 +160,8 @@ function Sec6() {
                     </Typography>
                 </Grid>
                 <Grid item xs={12} sm={6} lg={5}>
-                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}>
+                    <Box sx={{ position: 'relative', borderRadius: "20px", overflow: 'hidden' }}  data-aos="fade-up"
+                            data-aos-delay="800">
                         <img 
                             style={{ width: "100%", height: "auto", transition: '0.3s' }} 
                             src="https://avatars.mds.yandex.net/i?id=1174f1db1e89230b0457bade590e2bb655107a36-9827576-images-thumbs&n=13" 

@@ -22,6 +22,8 @@ function Sec2() {
                         marginBottom: "20px",
                         fontSize: { xs: '1.5rem', md: '2rem' } 
                     }}
+                     data-aos="fade-up"
+                            data-aos-delay="200"
                 >
                     What Happens Here
                 </Typography>
@@ -33,10 +35,13 @@ function Sec2() {
                         marginBottom: "20px",
                         fontSize: { xs: '2rem', md: '3rem' } 
                     }}
+                     data-aos="fade-up"
+                            data-aos-delay="400"
                 >
                     COFFEE BUILDS YOUR BASE.
                 </Typography>
-                <Box width={"100%"} sx={{ maxWidth: "600px", margin: "0 auto" }}>
+                <Box width={"100%"} sx={{ maxWidth: "600px", margin: "0 auto" }}  data-aos="fade-up"
+                            data-aos-delay="500">
                     <hr style={{ backgroundColor: "#CA8E46", height: "3px" }} />
                 </Box>
             </Box>

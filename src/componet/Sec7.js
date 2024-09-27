@@ -154,6 +154,8 @@ function Sec7() {
                                     mb: "20px",
                                     fontSize: { xs: '0.8rem', md: '1.5rem' }
                                 }}
+                                data-aos="fade-up"
+                                data-aos-delay="200"
                             >
                                 What Happens Here
                             </Typography>
@@ -165,11 +167,13 @@ function Sec7() {
                                     mb: "20px",
                                     fontSize: { xs: '1.5rem', md: '2rem' }
                                 }}
+                                data-aos="fade-up"
+                                data-aos-delay="300"
                             >
                                 COFFEE BUILDS YOUR BASE.
                             </Typography>
                             <Box width={"100%"} sx={{ maxWidth: "200px", mx: "auto" }}>
-                                <hr style={{ backgroundColor: "#CA8E46", height: "2px", border: "0" }} />
+                                <hr style={{ backgroundColor: "#CA8E46", height: "2px", border: "0" }} data-aos="fade-up" data-aos-delay="400" />
                             </Box>
                         </Box>
                     </Box>
@@ -185,7 +189,7 @@ function Sec7() {
                                     { title: "tea caffe", price: "$2.45", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=47bb492687fbbec0ca569facb31e93afabd6768c-10350639-images-thumbs&n=13" }
                                 ].map((item, index) => (
                                     <Grid item xs={12} sm={6} lg={6} key={index}>
-                                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                                        <Box sx={{ display: "flex", alignItems: "center" }} data-aos="fade-down" data-aos-delay={`${(index + 1) * 200}`}>
                                             <Box component={"img"} src={item.img} sx={{ width: "80px" }} />
                                             <Box sx={{ width: "90%", pl: "20px" }}>
                                                 <Box sx={{ display: "flex", justifyContent: "space-between", fontSize: "25px", alignItems: "end" }}>
@@ -202,6 +206,8 @@ function Sec7() {
                             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", mt: "50px" }}>
                                 <Link to={'/MENU'}>
                                     <Button
+                                        data-aos="fade-down"
+                                        data-aos-delay="1400" // Ensure the button appears last
                                         sx={{
                                             mb: "100px",
                                             height: "50px",
@@ -225,6 +231,7 @@ function Sec7() {
                         </Container>
                     </Box>
                 </Box>
+
 
                 <Box sx={{ width: "100%", marginBottom: "-3px", position: "absolute", bottom: "0", backgroundColor: "transparent", zIndex: "99" }}>
                     <svg fill='#EEEEEE' class="edgtf-lighter-effect edgtf-lighter-effect-top" preserveAspectRatio="none" width="100%" height="70px" viewBox="0 0 1920 27" enable-background="new 0 0 1920 27"><path d="M1906.688,12.029c-1.653-1.78-3.943-0.347-5.823-0.883c-0.623,0.442-0.879,1.208-1.873,1.044

@@ -22,8 +22,10 @@ function Sec5() {
                         marginBottom: "20px",
                         fontSize: { xs: '1.5rem', md: '2rem' } 
                     }}
+                     data-aos="fade-up"
+                            data-aos-delay="200"
                 >
-                   What Happens Here
+                    What Happens Here
                 </Typography>
                 <Typography
                     variant='h4'
@@ -31,12 +33,15 @@ function Sec5() {
                         color: "black",
                         fontWeight: "800",
                         marginBottom: "20px",
-                        fontSize: { xs: '1.5rem', md: '2.5rem' } 
+                        fontSize: { xs: '2rem', md: '3rem' } 
                     }}
+                     data-aos="fade-up"
+                            data-aos-delay="400"
                 >
-                  TEA AND COFFEE BUILD YOUR BASE.
+                  TEA AND COFFEE BUILDS YOUR BASE.
                 </Typography>
-                <Box width={"100%"} sx={{ maxWidth: "600px", margin: "0 auto" }}>
+                <Box width={"100%"} sx={{ maxWidth: "600px", margin: "0 auto" }}  data-aos="fade-up"
+                            data-aos-delay="500">
                     <hr style={{ backgroundColor: "#CA8E46", height: "3px" }} />
                 </Box>
             </Box>

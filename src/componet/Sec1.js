@@ -32,36 +32,46 @@ function Sec1() {
                     padding: { xs: '20px', sm: '40px' }
                 }}>
                     <Typography>
-                        <img src="./image/cup2.png" alt="" style={{ maxWidth: '100%', height: 'auto' }} />
+                        <img src="./image/cup2.png" alt="" style={{ maxWidth: '100%', height: 'auto' }} data-aos="fade-up" data-aos-delay="100" />
                     </Typography>
-                    <Typography variant='h2' sx={{ marginBottom: "20px", color: "white", fontWeight: "900", fontSize: { xs: '2rem', md: '3rem' } }}>
+                    <Typography
+                        variant='h2'
+                        sx={{ marginBottom: "20px", color: "white", fontWeight: "900", fontSize: { xs: '2rem', md: '3rem' } }}
+                        data-aos="fade-up"
+                        data-aos-delay="300">
                         SPECIAL COFFEE BEANS
                     </Typography>
-                    <Typography variant='h6' sx={{ color: "white", fontSize: { xs: '1rem', md: '1.25rem', fontFamily: "Sofadi One, system-ui" } }}>
+                    <Typography
+                        variant='h6'
+                        sx={{ color: "white", fontSize: { xs: '1rem', md: '1.25rem', fontFamily: "Sofadi One, system-ui" } }}
+                        data-aos="fade-up"
+                        data-aos-delay="500">
                         Coffee that fuels your dreams. Life is short, stay awake for it. Coffee, Art, and Vintage. Fuel for your creativity.
                     </Typography>
                     <Link to={'/CONTACT'}>
-                   
-                    <Button
-                        sx={{
-                            marginBottom: "100px",
-                            height: "50px",
-                            width: "160px",
-                            backgroundColor: "white",
-                            marginTop: "20px",
-                            color: "black",
-                            fontWeight: "800",
-                            border: "2px solid transparent", 
-                            '&:hover': {
-                                backgroundColor: "transparent",
-                                border: "2px solid white",
-                                color:"white" 
-                            },
-                        }}
-                    >
-                        READ MORE
-                    </Button>
+                        <Button
+                            sx={{
+                                marginBottom: "100px",
+                                height: "50px",
+                                width: "160px",
+                                backgroundColor: "white",
+                                marginTop: "20px",
+                                color: "black",
+                                fontWeight: "800",
+                                border: "2px solid transparent",
+                                '&:hover': {
+                                    backgroundColor: "transparent",
+                                    border: "2px solid white",
+                                    color: "white"
+                                },
+                            }}
+                            data-aos="fade-up"
+                            data-aos-delay="700"
+                        >
+                            READ MORE
+                        </Button>
                     </Link>
+
                 </Box>
             </Box>
             <Box sx={{ width: "100%", marginBottom: "-3px", position: "absolute", bottom: "0", backgroundColor: "transparent", zIndex: "99" }}>

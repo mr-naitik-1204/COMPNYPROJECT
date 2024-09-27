@@ -45,16 +45,16 @@ function Reservation() {
                 <Box>
                     <Grid container sx={{ marginTop: "60px" }}>
                         <Grid item lg={6} sx={{ marginTop: "60px" }}>
-                            <Box sx={{ fontSize: "30px", fontWeight: "800" }}>RESERVE YOUR TABLE HERE</Box>
-                            <Box sx={{ height: "6px", width: "150px", backgroundColor: "#B77A3E", marginTop: "30px" }}></Box>
-                            <Typography sx={{ marginTop: "30px" }}>
+                            <Box sx={{ fontSize: "30px", fontWeight: "800" }} data-aos="fade-right"  data-aos-delay="200">RESERVE YOUR TABLE HERE</Box>
+                            <Box sx={{ height: "6px", width: "150px", backgroundColor: "#B77A3E", marginTop: "30px" }} data-aos="fade-right"  data-aos-delay="400"></Box>
+                            <Typography sx={{ marginTop: "30px" }} data-aos="fade-right"  data-aos-delay="600">
                                 Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri nsequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id.error epicurei mea.
                             </Typography>
                         </Grid>
                         <Grid item lg={6}>
                             <Box sx={{
                                 width: "100%", height: "100%"
-                            }} component={'img'} src='https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/open-table-img-1.png'></Box>
+                            }} component={'img'} src='https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/open-table-img-1.png' data-aos="fade-left"  data-aos-delay="300"></Box>
                         </Grid>
                     </Grid>
                 </Box>

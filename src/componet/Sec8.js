@@ -29,7 +29,8 @@ function Sec8() {
                 <Box sx={{ width: "100%", overflow: "hidden", marginTop: "50px" }}>
                     <Grid  container>
                         {items.map((item, index) => (
-                            <Grid item lg={4} md={6} sm={12} xs={12} sx={{ padding: "5px" }} key={index}>
+                            <Grid item lg={4} md={6} sm={12} xs={12} sx={{ padding: "5px" }} key={index}  data-aos="fade-up"
+                            data-aos-delay={index * 350}>
                                 <Box>
                                     <img
                                         src={item.imgSrc}

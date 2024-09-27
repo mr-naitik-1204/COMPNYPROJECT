@@ -69,11 +69,13 @@ function About() {
                                 width="90%" 
                                 src='https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/About-img-1.png' 
                                 alt="About Us"
+                                data-aos="fade-right"
+                                data-aos-delay="200"
                             />
                         </Grid>
                         <Grid item xs={12} lg={6}>
-                            <Box sx={{ fontSize: "35px", fontWeight: "800" }}>FEDERICO HICKMAN</Box>
-                            <Typography sx={{ marginTop: "30px" }}>
+                            <Box sx={{ fontSize: "35px", fontWeight: "800" }} data-aos="fade-left" data-aos-delay="100">FEDERICO HICKMAN</Box>
+                            <Typography sx={{ marginTop: "30px" }} data-aos="fade-left" data-aos-delay="200">
                                 Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei...
                             </Typography>
                             <Box sx={{ display: "flex", alignItems: "center", marginTop: "30px" }}>
@@ -84,6 +86,7 @@ function About() {
                                         backgroundColor: "#B97C3F", 
                                         margin: "auto" 
                                     }} 
+                                    data-aos="fade-left" data-aos-delay="400"
                                 />
                                 <Typography 
                                     sx={{ 
@@ -91,11 +94,13 @@ function About() {
                                         fontWeight: "800", 
                                         marginLeft: "20px" 
                                     }}
+                                    data-aos="fade-left"
+                                    data-aos-delay="300"
                                 >
                                     Aenean eu leo quam. Pellentesque ornare sem lacinia quavenenatis estibacenas sed diam eget.
                                 </Typography>
                             </Box>
-                            <Typography sx={{ marginTop: "30px" }}>
+                            <Typography sx={{ marginTop: "30px" }} data-aos="fade-left" data-aos-delay="400">
                                 Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei...
                             </Typography>
                         </Grid>

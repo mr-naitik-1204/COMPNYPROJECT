@@ -8,9 +8,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Gotop from './componet/Gotop';
 import Resrvation from './componet/Resrvation';
 import Manu from './componet/Manu';
-
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, [])
   return (
     <>
       <BrowserRouter>

@@ -135,51 +135,85 @@ function Sec4() {
         C1915.898,10.076,1910.912,9.958,1906.688,12.029z"></path></svg>
                 </Box>
                 <Box sx={{ width: "90%", mx: "auto", marginBottom: "50px" }}>
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} md={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <img
-                                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-1-img-6.png"
-                                alt=""
-                                style={{
-                                    maxWidth: "50%",
-                                    height: "auto"
-                                }}
-                            />
-                        </Grid>
-                        <Grid item xs={12} md={6} sx={{ color: "white", display: "flex", alignItems: "center" }}>
-                            <Box>
-                                <Typography variant='h5' sx={{ fontSize: { xs: '1.2rem', md: '1.5rem' } }}>Application</Typography>
-                                <Typography variant='h4' sx={{ marginTop: "15px", fontSize: { xs: '1.5rem', md: '2rem' } }}>USE OUR APPLICATION.</Typography>
-                                <Typography sx={{ marginTop: "15px" }}>
-                                    <hr style={{ borderColor: "white" }} />
-                                </Typography>
-                                <Typography variant='h6' sx={{ marginTop: "15px", fontSize: { xs: '0.9rem', md: '1rem' } }}>
-                                    Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas.
-                                </Typography>
-                                <Link to={'/CONTACT'}>
-                                <Button
-                                    sx={{
-                                        height: "50px",
-                                        width: "160px",
-                                        backgroundColor: "white",
-                                        marginTop: "20px",
-                                        color: "black",
-                                        fontWeight: "800",
-                                        border: "2px solid transparent",
-                                        '&:hover': {
-                                            backgroundColor: "transparent",
-                                            border: "2px solid white",
-                                            color: "white"
-                                        },
-                                    }}
-                                >
-                                    READ MORE
-                                </Button>
-                                </Link>
-                            </Box>
-                        </Grid>
-                    </Grid>
-                </Box>
+    <Grid container spacing={2}>
+        <Grid 
+            item 
+            xs={12} 
+            md={6} 
+            sx={{ display: "flex", justifyContent: "center", alignItems: "center" }} 
+            data-aos="fade-right"
+            data-aos-delay="200"
+        >
+            <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-1-img-6.png"
+                alt=""
+                style={{
+                    maxWidth: "50%",
+                    height: "auto"
+                }}
+            />
+        </Grid>
+        <Grid 
+            item 
+            xs={12} 
+            md={6} 
+            sx={{ color: "white", display: "flex", alignItems: "center" }} 
+        >
+            <Box>
+                <Typography 
+                    variant='h5' 
+                    sx={{ fontSize: { xs: '1.2rem', md: '1.5rem' } }} 
+                    data-aos="fade-left"
+                    data-aos-delay="300" 
+                >
+                    Application
+                </Typography>
+                <Typography 
+                    variant='h4' 
+                    sx={{ marginTop: "15px", fontSize: { xs: '1.5rem', md: '2rem' } }}  
+                    data-aos="fade-left"
+                    data-aos-delay="400"
+                >
+                    USE OUR APPLICATION.
+                </Typography>
+                <Typography sx={{ marginTop: "15px" }}>
+                    <hr style={{ borderColor: "white" }} data-aos="fade-left" data-aos-delay="400" />
+                </Typography>
+                <Typography 
+                    variant='h6' 
+                    sx={{ marginTop: "15px", fontSize: { xs: '0.9rem', md: '1rem' } }}  
+                    data-aos="fade-left"
+                    data-aos-delay="500"
+                >
+                    Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas.
+                </Typography>
+                <Link to={'/CONTACT'}>
+                    <Button
+                        sx={{
+                            height: "50px",
+                            width: "160px",
+                            backgroundColor: "white",
+                            marginTop: "20px",
+                            color: "black",
+                            fontWeight: "800",
+                            border: "2px solid transparent",
+                            '&:hover': {
+                                backgroundColor: "transparent",
+                                border: "2px solid white",
+                                color: "white"
+                            },
+                        }}
+                        data-aos="fade-left"
+                        data-aos-delay="600"
+                    >
+                        READ MORE
+                    </Button>
+                </Link>
+            </Box>
+        </Grid>
+    </Grid>
+</Box>
+
                 <Box sx={{ width: "100%", marginBottom: "-3px", position: "absolute", bottom: "0", backgroundColor: "transparent", zIndex: "99" }}>
                     <svg fill='#EEEEEE' class="edgtf-lighter-effect edgtf-lighter-effect-top" preserveAspectRatio="none" width="100%" height="70px" viewBox="0 0 1920 27" enable-background="new 0 0 1920 27"><path d="M1906.688,12.029c-1.653-1.78-3.943-0.347-5.823-0.883c-0.623,0.442-0.879,1.208-1.873,1.044
         c-1.992-1.974-5.01-1.6-7.448-2.713c-0.417,0.074-0.441,0.997-1.238,0.33c-0.103-0.113-0.323-0.356-1.033-1.142
