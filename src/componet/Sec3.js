@@ -1,6 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Sec3() {
     const items = [
@@ -44,6 +45,7 @@ function Sec3() {
                                 <Typography variant='h6' sx={{ mt: 1, fontSize: { xs: '0.875rem', md: '1rem' } }}>
                                     {item.description}
                                 </Typography>
+                                <Link to={'/Blog'}>
                                 <Button
                                     variant="contained"
                                     sx={{
@@ -60,6 +62,7 @@ function Sec3() {
                                 >
                                     Learn More <FaArrowRight />
                                 </Button>
+                                </Link>
                             </Grid>
                         ))}
                     </Grid>

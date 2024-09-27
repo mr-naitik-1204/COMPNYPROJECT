@@ -152,7 +152,7 @@ function Reservation() {
                                     },
                                 }}
                             >
-                                READ MORE
+                              SUBMIT
                             </Button>
                         </Grid>
                     </Grid>
