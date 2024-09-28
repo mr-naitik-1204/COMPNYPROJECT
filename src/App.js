@@ -22,15 +22,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Lending />}>
           </Route>
-          <Route path="/MENU" element={<Manu />}>
+          <Route path="/menu" element={<Manu />}>
           </Route>
           <Route path="/about" element={<About />}>
           </Route>
-          <Route path="/CONTACT" element={<Contect />}>
+          <Route path="/contact" element={<Contect />}>
           </Route>
           <Route path="/blog" element={<Blog />}>
           </Route>
-          <Route path="/RESERVATION" element={<Resrvation />}>
+          <Route path="/reservation" element={<Resrvation />}>
           </Route>
         </Routes>
       </BrowserRouter>

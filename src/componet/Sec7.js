@@ -181,12 +181,12 @@ function Sec7() {
                         <Container>
                             <Grid container spacing={4} sx={{ color: "white" }}>
                                 {[
-                                    { title: "Caffe Latte", price: "$5.45", description: "Fresh brewed coffee and steamed milk", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-150x150.jpg" },
-                                    { title: "Caffe Mocha", price: "$3.67", description: "Espresso With Milk, and Whipped Cream", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-2-150x150.jpg" },
-                                    { title: "Cappuccino", price: "$3.06", description: "Espresso Shots and Light Layer of Crema", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-6-150x150.jpg" },
-                                    { title: "Caffe tea Lat", price: "$6.45", description: "Fresh brewed coffee and steamed milk", img: "https://avatars.mds.yandex.net/i?id=9956cac76a526a6d3cb7524abc9ded43131b283a-10574297-images-thumbs&n=13" },
-                                    { title: "tea fresh", price: "$3.45", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=15bedbbbc402c6e79e140f42f8bdbb3ce5a107f4-8498042-images-thumbs&n=13" },
-                                    { title: "tea caffe", price: "$2.45", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=47bb492687fbbec0ca569facb31e93afabd6768c-10350639-images-thumbs&n=13" }
+                                    { title: "Caffe Latte", price: "₹95", description: "Fresh brewed coffee and steamed milk", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-150x150.jpg" },
+                                    { title: "Caffe Mocha", price: "₹120", description: "Espresso With Milk, and Whipped Cream", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-2-150x150.jpg" },
+                                    { title: "Cappuccino", price: "₹250", description: "Espresso Shots and Light Layer of Crema", img: "https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-1-list-icon-img-6-150x150.jpg" },
+                                    { title: "Caffe tea Lat", price: "₹200", description: "Fresh brewed coffee and steamed milk", img: "https://avatars.mds.yandex.net/i?id=9956cac76a526a6d3cb7524abc9ded43131b283a-10574297-images-thumbs&n=13" },
+                                    { title: "tea fresh", price: "₹70", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=15bedbbbc402c6e79e140f42f8bdbb3ce5a107f4-8498042-images-thumbs&n=13" },
+                                    { title: "tea caffe", price: "₹150", description: "Fresh brewed tea and steamed milk", img: "https://avatars.mds.yandex.net/i?id=47bb492687fbbec0ca569facb31e93afabd6768c-10350639-images-thumbs&n=13" }
                                 ].map((item, index) => (
                                     <Grid item xs={12} sm={6} lg={6} key={index}>
                                         <Box sx={{ display: "flex", alignItems: "center" }} data-aos="fade-down" data-aos-delay={`${(index + 1) * 200}`}>

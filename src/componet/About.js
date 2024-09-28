@@ -14,7 +14,7 @@ function About() {
                 url={"https://i.pinimg.com/originals/23/35/eb/2335ebdf255dd91ca7cdac37a92da22c.jpg"} 
                 Name={"About me"} 
             />
-            <Box sx={{ marginBottom: "50px" }}>
+            <Box sx={{ marginBottom: "50px",overflow:"hidden" }}>
                 <Box sx={{ width: { xs: "90%", md: "80%" }, margin: "auto", paddingTop: "50px" }}>
                     <Box 
                         sx={{ 

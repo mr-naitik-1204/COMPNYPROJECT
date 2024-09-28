@@ -14,7 +14,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 
 
-const pages = ['HOME', 'MENU', 'BLOG', 'ABOUT', 'CONTACT'];
+const pages = ['home', 'menu', 'blog', 'about', 'contact'];
 
 function Nav() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -86,7 +86,9 @@ function Nav() {
                             sx={{ display: { xs: 'block', md: 'none' }, paddingTop: "0", paddingBottom: "0" }}
                         >
                             {pages.map((page) => (
-                                <MenuItem
+                            <Link to={page == "home" ? "/" : `/${page}`} style={{ textDecoration: "none" }}>
+                             
+                             <MenuItem
                                     key={page}
                                     onClick={handleCloseNavMenu}
                                     sx={{
@@ -102,13 +104,15 @@ function Nav() {
                                         {page}
                                     </Typography>
                                 </MenuItem>
+                            </Link>
+
                             ))}
                         </Menu>
                     </Box>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "space-evenly", padding: "0px" }}>
                         {pages.map((page) => (
-                            <Link to={page == "HOME" ? "/" : `/${page}`} style={{ textDecoration: "none" }}>
+                            <Link to={page == "home" ? "/" : `/${page}`} style={{ textDecoration: "none" }}>
                                 <Button
                                     key={page}
                                     onClick={handleCloseNavMenu}
@@ -122,7 +126,7 @@ function Nav() {
 
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title=" RESERVATION">
-                            <Link to={'/RESERVATION'}>
+                            <Link to={'/reservation'}>
                                 <Button
                                     onClick={handleOpenUserMenu}
                                     sx={{

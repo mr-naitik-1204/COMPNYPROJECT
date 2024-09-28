@@ -62,7 +62,7 @@ function Reservation() {
                     <Grid container spacing={2} sx={{ marginTop: "20px" }}>
                         <Grid item xs={12} sm={3}>
                             <FormControl sx={{ m: 1, minWidth: 120, width: '100%' }}>
-                                <InputLabel id="age-select-label">parsan</InputLabel>
+                                <InputLabel id="age-select-label">person</InputLabel>
                                 <Select
                                     labelId="age-select-label"
                                     id="age-select"
@@ -70,7 +70,7 @@ function Reservation() {
                                     onClose={handleAgeClose}
                                     onOpen={handleAgeOpen}
                                     value={age}
-                                    label="parsan"
+                                    label="person"
                                     onChange={handleAgeChange}
                                     MenuProps={{
                                         PaperProps: {
@@ -82,7 +82,7 @@ function Reservation() {
                                     }}
                                 >
                                     {Array.from({ length: 24 }, (_, index) => (
-                                        <MenuItem key={index} value={index * 10}>{`parsan:-${index + 1}`}</MenuItem>
+                                        <MenuItem key={index} value={index * 10}>{`person:-${index + 1}`}</MenuItem>
                                     ))}
                                 </Select>
                             </FormControl>

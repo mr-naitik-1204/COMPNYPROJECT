@@ -21,7 +21,7 @@ function Contect() {
     <>
       <Nav />
       <Titel
-        url={"https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/Contact-title-area-img-1.jpg"}
+        url={"https://www.cmc-caffe.it/public/hdrimg-homesolubili-74.jpg"}
         Name={"Contact us"}
       />
       <Box>
