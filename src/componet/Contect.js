@@ -178,7 +178,7 @@ function Contect() {
                 <Grid item xs={12} sm={6}>
                   <TextField
                     required
-                    label="Number of beds"
+                    label="Number of table"
                     type="number"
                     sx={{
                       width: "100%",
@@ -224,13 +224,14 @@ function Contect() {
               <Grid container spacing={2} sx={{ paddingLeft: "16px", marginTop: "10px" }}>
                 <TextField
                   xs={12}
-                  sx={{ width: "100%" }}
+                  // sx={{ }}
                   id="message"
-                  label="W3Schools Review"
+                
                   multiline
                   rows={3}
                   variant="outlined"
                   sx={{
+                     width: "100%",
                     '& .MuiOutlinedInput-root': {
                       '& fieldset': {
                         borderColor: 'grey',

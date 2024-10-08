@@ -1,8 +1,9 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
 
 function Sec5() {
     return (
+        <Container>
         <Box
             sx={{
                 display: "flex",
@@ -46,6 +47,7 @@ function Sec5() {
                 </Box>
             </Box>
         </Box>
+        </Container>
     );
 }
 
