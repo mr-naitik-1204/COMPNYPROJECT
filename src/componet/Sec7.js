@@ -233,7 +233,7 @@ function Sec7() {
                 </Box>
 
 
-                <Box sx={{ width: "100%", marginBottom: "-3px", position: "absolute", bottom: "-10", backgroundColor: "transparent", zIndex: "99" }}>
+                <Box sx={{ width: "100%", marginBottom: "-3px", position: "absolute", bottom: "0", backgroundColor: "transparent", zIndex: "99" }}>
                     <svg fill='#EEEEEE' class="edgtf-lighter-effect edgtf-lighter-effect-top" preserveAspectRatio="none" width="100%" height="70px" viewBox="0 0 1920 27" enable-background="new 0 0 1920 27"><path d="M1906.688,12.029c-1.653-1.78-3.943-0.347-5.823-0.883c-0.623,0.442-0.879,1.208-1.873,1.044
         c-1.992-1.974-5.01-1.6-7.448-2.713c-0.417,0.074-0.441,0.997-1.238,0.33c-0.103-0.113-0.323-0.356-1.033-1.142
         c-0.492,0.938-0.948,1.805-1.409,2.683c-2.1-2.389-5.174,0.159-7.012-2.03c-0.991,1.465-3.179,0.306-4.117,1.874
