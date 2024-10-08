@@ -76,38 +76,47 @@ function Nav() {
                             <img src="./image/logon.png" alt="Logo" style={{ margin: "auto", width: "120px" }} />
                         </Box>
                         <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{ vertical: 'bottom', horizontal: 'left', }}
-                            keepMounted
-                            transformOrigin={{ vertical: 'top', horizontal: 'left' }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{ display: { xs: 'block', md: 'none' }, paddingTop: "0", paddingBottom: "0" }}
-                        >
-                            {pages.map((page) => (
-                            <Link to={page == "home" ? "/" : `/${page}`} style={{ textDecoration: "none" }}>
-                             
-                             <MenuItem
-                                    key={page}
-                                    onClick={handleCloseNavMenu}
-                                    sx={{
-                                        width: { lg: "1040px", sm: "1030px", xs: "1020px" },
-                                        backgroundColor: "transparent",
-                                        '&:hover': {
-                                            backgroundColor: "rgba(255, 255, 255, 0.1)", // Add hover effect
-                                        }
+    id="menu-appbar"
+    anchorEl={anchorElNav}
+    anchorOrigin={{ vertical: 'bottom', horizontal: 'left', }}
+    keepMounted
+    transformOrigin={{ vertical: 'top', horizontal: 'left' }}
+    open={Boolean(anchorElNav)}
+    onClose={handleCloseNavMenu}
+    sx={{ display: { xs: 'block', md: 'none' }, paddingTop: "0", paddingBottom: "0" }}
+>
+    {pages.map((page) => (
+        <Link to={page === "home" ? "/" : `/${page}`} style={{ textDecoration: "none" }} key={page}>
+            <MenuItem
+                onClick={handleCloseNavMenu}
+                sx={{
+                    width: { lg: "1040px", sm: "1030px", xs: "1020px" },
+                    backgroundColor: "transparent",
+                    '&:hover': {
+                        backgroundColor: "rgba(255, 255, 255, 0.2)", // Slightly brighter on hover
+                    }
+                }}
+            >
+                <Typography
+                    sx={{
+                        textAlign: 'center',
+                        backgroundColor: "transparent",
+                        color: "#D4B26A", // Change to your desired color
+                        fontSize: "1.2rem", // Increase font size
+                        fontWeight: "700", // Bold font
+                        transition: "color 0.3s", // Smooth transition for color change
+                        '&:hover': {
+                            color: "#fff", // Change color on hover
+                        }
+                    }}
+                >
+                    {page}
+                </Typography>
+            </MenuItem>
+        </Link>
+    ))}
+</Menu>
 
-                                    }}
-                                >
-                                    <Typography sx={{ textAlign: 'center', backgroundColor: "transparent" }}>
-                                        {page}
-                                    </Typography>
-                                </MenuItem>
-                            </Link>
-
-                            ))}
-                        </Menu>
                     </Box>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "space-evenly", padding: "0px" }}>

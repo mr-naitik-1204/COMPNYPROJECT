@@ -21,7 +21,7 @@ function Contect() {
     <>
       <Nav />
       <Titel
-        url={"https://www.cmc-caffe.it/public/hdrimg-homesolubili-74.jpg"}
+        url={"https://www.refreshmentsystems.co.uk/app/uploads/2020/07/Coffee-in-pub.jpg"}
         Name={"Contact us"}
       />
       <Box>
