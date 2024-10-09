@@ -1,218 +1,110 @@
 import React, { useState } from "react";
-import { Box, Button, Checkbox, Container, FormControlLabel, Grid, MenuItem, Select, TextField } from "@mui/material";
+import { Box, Button, Checkbox, Container, FormControlLabel, Grid, TextField } from "@mui/material";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import Titel from "./Titel";
 
-function Contect() {
-  const [age, setAge] = useState('');
-  const [type, setType] = useState('');
+function Contact() {
   const [inputValue, setInputValue] = useState('');
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
+  const handleInputChange = (e) => {
+    const value = e.target.value.replace(/\D/g, '').slice(0, 10);
+    setInputValue(value);
   };
-  
-  const handleChange2 = (event) => {
-    setType(event.target.value);
-  };
-  window.scrollTo({ top: 0, behavior: "instant" })
+
+  window.scrollTo({ top: 0, behavior: "instant" });
+
   return (
     <>
       <Nav />
       <Titel
-        url={"https://www.refreshmentsystems.co.uk/app/uploads/2020/07/Coffee-in-pub.jpg"}
+        url={"https://avatars.mds.yandex.net/i?id=30e0cb3573dde2bc71687c6f4efcc234_l-9182360-images-thumbs&ref=rim&n=13&w=1200&h=800"}
         Name={"Contact us"}
       />
-      <Box>
+      <Box sx={{ backgroundColor: '#EEEEEE', padding: '40px 0' }}>
         <Container maxWidth="md">
-          <Box sx={{ width: "85%", margin: "auto", marginBottom: "100px" }}>
-            <Box sx={{ fontSize: "22px", color: "gray" }}>
+          <Box sx={{
+            width: "100%",
+            margin: "auto",
+            padding: "20px",
+            backgroundColor: 'white',
+            borderRadius: '8px',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+            marginBottom: "100px",
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}>
+            <Box sx={{
+              fontSize: { xs: "20px", md: "22px" },
+              color: "gray",
+              textAlign: 'center',
+              marginBottom: '20px'
+            }}>
               The Inquiry Form widget allows you to design unique forms to capture your leads. This form automatically connects with the integrated Houzez CRM and your email inbox to keep everything on track.
             </Box>
-            <form>
-              <Box sx={{ marginTop: "80px", fontSize: "25px" }}>Information</Box>
-              <Select
-                value={age}
-                onChange={handleChange}
-                displayEmpty
-                inputProps={{ 'aria-label': 'Without label' }}
-                sx={{ width: "100%", marginTop: "10px" }}
-              >
-                <MenuItem value="">I'm a</MenuItem>
-                <MenuItem value={20}>I'm a real estate agent</MenuItem>
-                <MenuItem value={30}>I'm a property owner</MenuItem>
-              </Select>
+            <form style={{ width: '100%' }}>
+              <Box sx={{
+                marginBottom: "20px",
+                fontSize: { xs: "22px", md: "25px" },
+                textAlign: 'center',
+                color: '#B77A3E'
+              }}>Information</Box>
               <Grid container spacing={2}>
-                <Grid item xs={12} sm={6} sx={{ marginTop: "15px" }}>
-                  <TextField
-                    required
-                    id="first-name"
-                    label="First Name"
-                    type="text"
-                    sx={{
-                      width: "100%",
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                          borderColor: 'grey',
+                {['First Name', 'Last Name', 'Email Address', 'Mobile', 'Number of tables'].map((label, index) => (
+                  <Grid item xs={12} sm={6} key={index} sx={{ marginTop: "15px" }}>
+                    <TextField
+                      required
+                      label={label}
+                      type={label === 'Email Address' ? 'email' : 'text'}
+                      variant="outlined"
+                      sx={{
+                        width: "100%",
+                        '& .MuiOutlinedInput-root': {
+                          borderRadius: '8px',
+                          '& fieldset': {
+                            borderColor: 'grey',
+                          },
+                          '&:hover fieldset': {
+                            borderColor: '#B77A3E',
+                          },
+                          '&.Mui-focused fieldset': {
+                            borderColor: '#B77A3E',
+                          },
                         },
-                        '&:hover fieldset': {
-                          borderColor: 'black',
-                        },
-                        '&.Mui-focused fieldset': {
-                          borderColor: 'black',
-                        },
-                      },
-                    }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6} sx={{ marginTop: "15px" }}>
-                  <TextField
-                    required
-                    id="last-name"
-                    label="Last Name"
-                    type="text"
-                    sx={{
-                      width: "100%",
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                          borderColor: 'grey',
-                        },
-                        '&:hover fieldset': {
-                          borderColor: 'black',
-                        },
-                        '&.Mui-focused fieldset': {
-                          borderColor: 'black',
-                        },
-                      },
-                    }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    required
-                    id="email"
-                    label="Email Address"
-                    type="email"
-                    sx={{
-                      width: "100%",
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                          borderColor: 'grey',
-                        },
-                        '&:hover fieldset': {
-                          borderColor: 'black',
-                        },
-                        '&.Mui-focused fieldset': {
-                          borderColor: 'black',
-                        },
-                      },
-                    }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    required
-                    id="mobile"
-                    label="Mobile"
-                    type="number"
-                    variant="outlined"
-                    value={inputValue}
-                    onInput={(e) => {
-                      let value = e.target.value;
-                      value = value.replace(/\D/g, '').slice(0, 10);
-                      setInputValue(value);
-                    }}
-                    sx={{
-                      width: "100%",
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                          borderColor: 'grey',
-                        },
-                        '&:hover fieldset': {
-                          borderColor: 'black',
-                        },
-                        '&.Mui-focused fieldset': {
-                          borderColor: 'black',
-                        },
-                      },
-                    }}
-                  />
-                </Grid>
+                      }}
+                      value={label === 'Mobile' ? inputValue : ''}
+                      onInput={label === 'Mobile' ? handleInputChange : undefined}
+                    />
+                  </Grid>
+                ))}
               </Grid>
 
-              <Box sx={{ marginTop: "30px", fontSize: "25px" }}>Property</Box>
-              <Select
-                value={type}
-                onChange={handleChange2}
-                displayEmpty
-                inputProps={{ 'aria-label': 'Without label' }}
-                sx={{ width: "100%", marginTop: "10px" }}
-              >
-                <MenuItem value="">Select type</MenuItem>
-                <MenuItem value="Large Luxury Villa">Large Luxury Villa</MenuItem>
-                <MenuItem value="Single Family Home">Single Family Home</MenuItem>
-              </Select>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sx={{ marginTop: "15px" }}>
+              <Box sx={{
+                marginTop: "30px",
+                fontSize: { xs: "22px", md: "25px" },
+                textAlign: 'center',
+                color: '#B77A3E'
+              }}>Message</Box>
+              <Grid container spacing={2} sx={{ marginTop: "10px" }}>
+                <Grid item xs={12}>
                   <TextField
-                    required
-                    label="Your budget"
-                    type="number"
-                    sx={{
-                      width: "100%",
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                          borderColor: 'grey',
-                        },
-                        '&:hover fieldset': {
-                          borderColor: 'black',
-                        },
-                        '&.Mui-focused fieldset': {
-                          borderColor: 'black',
-                        },
-                      },
-                    }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    required
-                    label="Number of table"
-                    type="number"
-                    sx={{
-                      width: "100%",
-                      '& .MuiOutlinedInput-root': {
-                        '& fieldset': {
-                          borderColor: 'grey',
-                        },
-                        '&:hover fieldset': {
-                          borderColor: 'black',
-                        },
-                        '&.Mui-focused fieldset': {
-                          borderColor: 'black',
-                        },
-                      },
-                    }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    required
-                    label="Mobile"
-                    type="number"
+                    id="message"
+                    multiline
+                    rows={3}
                     variant="outlined"
                     sx={{
                       width: "100%",
                       '& .MuiOutlinedInput-root': {
+                        borderRadius: '8px',
                         '& fieldset': {
                           borderColor: 'grey',
                         },
                         '&:hover fieldset': {
-                          borderColor: 'black',
+                          borderColor: '#B77A3E',
                         },
                         '&.Mui-focused fieldset': {
-                          borderColor: 'black',
+                          borderColor: '#B77A3E',
                         },
                       },
                     }}
@@ -220,45 +112,23 @@ function Contect() {
                 </Grid>
               </Grid>
 
-              <Box sx={{ marginTop: "30px", fontSize: "25px" }}>Message</Box>
-              <Grid container spacing={2} sx={{ paddingLeft: "16px", marginTop: "10px" }}>
-                <TextField
-                  xs={12}
-                  // sx={{ }}
-                  id="message"
-                
-                  multiline
-                  rows={3}
-                  variant="outlined"
-                  sx={{
-                     width: "100%",
-                    '& .MuiOutlinedInput-root': {
-                      '& fieldset': {
-                        borderColor: 'grey',
-                      },
-                      '&:hover fieldset': {
-                        borderColor: 'black',
-                      },
-                      '&.Mui-focused fieldset': {
-                        borderColor: 'black',
-                      },
-                    },
-                  }}
-                />
-              </Grid>
-
-              <Box sx={{ width: "100%" }}>
-                <Box sx={{ marginTop: "20px" }}>
-                  <label htmlFor="vehicle1">GDPR Agreement</label>
-                </Box>
+              <Box sx={{ width: "100%", marginTop: "20px", textAlign: 'center' }}>
                 <FormControlLabel
-                  sx={{ marginTop: "10px" }}
-                  control={<Checkbox id="vehicle1" name="inputWrapped" />}
+                  control={<Checkbox id="consent" name="inputWrapped" />}
                   label="I consent to having this website store my submitted information"
                 />
               </Box>
-              <Box sx={{ marginTop: "10px" }}>
-                <Button type="submit" sx={{ width: "100%", color: "white", fontSize: "24px", backgroundColor: "#B77A3E", borderRadius: "10px", '&:hover': { backgroundColor: "#B77A3E" } }}>Submit</Button>
+              <Box sx={{ marginTop: "10px", textAlign: 'center' }}>
+                <Button type="submit" sx={{
+                  width: "100%",
+                  color: "white",
+                  fontSize: { xs: "20px", md: "24px" },
+                  backgroundColor: "#B77A3E",
+                  borderRadius: "10px",
+                  '&:hover': { backgroundColor: "#a66b2e" }
+                }}>
+                  Submit
+                </Button>
               </Box>
             </form>
           </Box>
@@ -269,4 +139,4 @@ function Contect() {
   );
 }
 
-export default Contect;
+export default Contact;

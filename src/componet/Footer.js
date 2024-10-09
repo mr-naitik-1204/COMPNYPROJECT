@@ -40,7 +40,7 @@ function Footer() {
                         <Typography sx={{ marginTop: "5px", color: "#acacac", textTransform: "lowercase" }}>SARTHANA JAKATNKA 224,</Typography>
                         <Typography sx={{ marginTop: "5px", color: "#acacac", textTransform: "lowercase" }}>SURAT</Typography>
                         <Box sx={{ fontSize: "18px", marginTop: "10px" }}>The Last Standard Post</Box>
-                        <input type="text" style={{ width: "160px", height: "40px", backgroundColor: "transparent", border: "1px solid white", marginTop: "25px" ,paddingLeft:"7px"}} placeholder='ENTER EMAIL' />
+                        <input type="text" style={{ width: "160px",color:"white", height: "40px", backgroundColor: "transparent", border: "1px solid white", marginTop: "25px" ,paddingLeft:"7px"}} placeholder='ENTER EMAIL' />
                         <Button sx={{ backgroundColor: "#9A6E41", color: "white", width: "50px", height: "45px", borderRadius: "0px", marginLeft: "4px", marginTop: "2px" }}>ADD</Button>
                     </Grid>
 
