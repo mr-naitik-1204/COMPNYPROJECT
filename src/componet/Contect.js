@@ -5,11 +5,35 @@ import Nav from "./Nav";
 import Titel from "./Titel";
 
 function Contact() {
-  const [inputValue, setInputValue] = useState('');
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    mobile: '',
+    numberOfTables: '',
+    message: '',
+    consent: false,
+  });
 
   const handleInputChange = (e) => {
-    const value = e.target.value.replace(/\D/g, '').slice(0, 10);
-    setInputValue(value);
+    const { name, value } = e.target;
+    if (name === 'mobile') {
+      // Allow only numbers and limit to 10 digits
+      const formattedValue = value.replace(/\D/g, '').slice(0, 10);
+      setFormData({ ...formData, [name]: formattedValue });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+  };
+
+  const handleCheckboxChange = (e) => {
+    setFormData({ ...formData, consent: e.target.checked });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log(formData); // Replace with your submission logic
   };
 
   return (
@@ -41,7 +65,7 @@ function Contact() {
             }}>
               The Inquiry Form widget allows you to design unique forms to capture your leads. This form automatically connects with the integrated Houzez CRM and your email inbox to keep everything on track.
             </Box>
-            <form style={{ width: '100%' }}>
+            <form onSubmit={handleSubmit} style={{ width: '100%' }}>
               <Box sx={{
                 marginBottom: "15px",
                 fontSize: { xs: "20px", md: "25px" },
@@ -49,12 +73,19 @@ function Contact() {
                 color: '#B77A3E'
               }}>Information</Box>
               <Grid container spacing={2}>
-                {['First Name', 'Last Name', 'Email Address', 'Mobile', 'Number of tables'].map((label, index) => (
+                {[
+                  { label: 'First Name', name: 'firstName' },
+                  { label: 'Last Name', name: 'lastName' },
+                  { label: 'Email Address', name: 'email', type: 'email' },
+                  { label: 'Mobile', name: 'mobile' },
+                  { label: 'Number of tables', name: 'numberOfTables' },
+                ].map(({ label, name, type = 'text' }, index) => (
                   <Grid item xs={12} sm={6} key={index} sx={{ marginTop: "10px" }}>
                     <TextField
                       required
                       label={label}
-                      type={label === 'Email Address' ? 'email' : 'text'}
+                      type={type}
+                      name={name}
                       variant="outlined"
                       sx={{
                         width: "100%",
@@ -71,8 +102,8 @@ function Contact() {
                           },
                         },
                       }}
-                      value={label === 'Mobile' ? inputValue : ''}
-                      onInput={label === 'Mobile' ? handleInputChange : undefined}
+                      value={formData[name]}
+                      onChange={handleInputChange}
                     />
                   </Grid>
                 ))}
@@ -88,6 +119,7 @@ function Contact() {
                 <Grid item xs={12}>
                   <TextField
                     id="message"
+                    name="message"
                     multiline
                     rows={3}
                     variant="outlined"
@@ -106,13 +138,21 @@ function Contact() {
                         },
                       },
                     }}
+                    value={formData.message}
+                    onChange={handleInputChange}
                   />
                 </Grid>
               </Grid>
 
               <Box sx={{ width: "100%", marginTop: "10px", textAlign: 'center' }}>
                 <FormControlLabel
-                  control={<Checkbox id="consent" name="inputWrapped" />}
+                  control={
+                    <Checkbox
+                      id="consent"
+                      checked={formData.consent}
+                      onChange={handleCheckboxChange}
+                    />
+                  }
                   label="I consent to having this website store my submitted information"
                 />
               </Box>
