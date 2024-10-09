@@ -24,7 +24,7 @@ function Contact() {
           <Box sx={{
             width: "100%",
             margin: "auto",
-            padding: { xs: '10px', md: '20px' },
+            padding: { xs: '7px', md: '20px' },
             backgroundColor: 'white',
             borderRadius: '8px',
             boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
@@ -34,7 +34,7 @@ function Contact() {
             alignItems: 'center',
           }}>
             <Box sx={{
-              fontSize: { xs: "18px", md: "22px" },
+              fontSize: { xs: "17px", md: "21px" },
               color: "gray",
               textAlign: 'center',
               marginBottom: '10px'
