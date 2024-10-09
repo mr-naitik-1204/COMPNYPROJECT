@@ -12,8 +12,6 @@ function Contact() {
     setInputValue(value);
   };
 
-  window.scrollTo({ top: 0, behavior: "instant" });
-
   return (
     <>
       <Nav />
@@ -21,38 +19,38 @@ function Contact() {
         url={"https://avatars.mds.yandex.net/i?id=30e0cb3573dde2bc71687c6f4efcc234_l-9182360-images-thumbs&ref=rim&n=13&w=1200&h=800"}
         Name={"Contact us"}
       />
-      <Box sx={{ backgroundColor: '#EEEEEE', padding: '40px 0' }}>
+      <Box sx={{ backgroundColor: '#EEEEEE', padding: '20px 0' }}>
         <Container maxWidth="md">
           <Box sx={{
             width: "100%",
             margin: "auto",
-            padding: "20px",
+            padding: { xs: '10px', md: '20px' },
             backgroundColor: 'white',
             borderRadius: '8px',
             boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-            marginBottom: "100px",
+            marginBottom: "40px",
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
           }}>
             <Box sx={{
-              fontSize: { xs: "20px", md: "22px" },
+              fontSize: { xs: "18px", md: "22px" },
               color: "gray",
               textAlign: 'center',
-              marginBottom: '20px'
+              marginBottom: '10px'
             }}>
               The Inquiry Form widget allows you to design unique forms to capture your leads. This form automatically connects with the integrated Houzez CRM and your email inbox to keep everything on track.
             </Box>
             <form style={{ width: '100%' }}>
               <Box sx={{
-                marginBottom: "20px",
-                fontSize: { xs: "22px", md: "25px" },
+                marginBottom: "15px",
+                fontSize: { xs: "20px", md: "25px" },
                 textAlign: 'center',
                 color: '#B77A3E'
               }}>Information</Box>
               <Grid container spacing={2}>
                 {['First Name', 'Last Name', 'Email Address', 'Mobile', 'Number of tables'].map((label, index) => (
-                  <Grid item xs={12} sm={6} key={index} sx={{ marginTop: "15px" }}>
+                  <Grid item xs={12} sm={6} key={index} sx={{ marginTop: "10px" }}>
                     <TextField
                       required
                       label={label}
@@ -81,8 +79,8 @@ function Contact() {
               </Grid>
 
               <Box sx={{
-                marginTop: "30px",
-                fontSize: { xs: "22px", md: "25px" },
+                marginTop: "20px",
+                fontSize: { xs: "20px", md: "25px" },
                 textAlign: 'center',
                 color: '#B77A3E'
               }}>Message</Box>
@@ -112,7 +110,7 @@ function Contact() {
                 </Grid>
               </Grid>
 
-              <Box sx={{ width: "100%", marginTop: "20px", textAlign: 'center' }}>
+              <Box sx={{ width: "100%", marginTop: "10px", textAlign: 'center' }}>
                 <FormControlLabel
                   control={<Checkbox id="consent" name="inputWrapped" />}
                   label="I consent to having this website store my submitted information"
@@ -122,7 +120,7 @@ function Contact() {
                 <Button type="submit" sx={{
                   width: "100%",
                   color: "white",
-                  fontSize: { xs: "20px", md: "24px" },
+                  fontSize: { xs: "18px", md: "24px" },
                   backgroundColor: "#B77A3E",
                   borderRadius: "10px",
                   '&:hover': { backgroundColor: "#a66b2e" }
