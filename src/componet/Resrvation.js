@@ -41,7 +41,7 @@ function Reservation() {
                 url={"https://www.gamerzunite.com/graphics/images/mmclean/Cafe-Eorzea-Decor.jpg"}
                 Name={"RESERVATION"}
             />
-            <Container>
+            <Container sx={{overflow:"hidden"}}>
                 <Box>
                     <Grid container sx={{ marginTop: "60px" }}>
                         <Grid item lg={6} sx={{ marginTop: "60px" }}>
